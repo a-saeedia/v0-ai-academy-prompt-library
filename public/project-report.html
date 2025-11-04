@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گزارش پروژه آکادمی هوش مصنوعی تترا</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.8;
+            color: #000;
+            background: #fff;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #afd700 0%, #8fb600 100%);
+            color: #000;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #afd700;
+        }
+        
+        .subsection-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+            margin: 20px 0 15px 0;
+        }
+        
+        .content {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-right: 4px solid #afd700;
+            border-radius: 6px;
+        }
+        
+        .feature-list li strong {
+            color: #000;
+            font-weight: 600;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #afd700;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #afd700;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .tech-badge {
+            background: #afd700;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .code-block {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .highlight-box {
+            background: #fffbeb;
+            border-right: 4px solid #afd700;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e5e5;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .checkmark {
+            color: #afd700;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>گزارش جامع پروژه</h1>
+        <div class="subtitle">آکادمی هوش مصنوعی تترا (Tethera AI Academy)</div>
+        <div class="subtitle" style="margin-top: 10px;">تاریخ: ۱۴ دی ۱۴۰۳</div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۱. خلاصه اجرایی</h2>
+        <div class="content">
+            پروژه آکادمی هوش مصنوعی تترا یک پلتفرم جامع و دوزبانه (فارسی-انگلیسی) برای مدیریت و اشتراک‌گذاری پرامپت‌های هوش مصنوعی است که با استفاده از جدیدترین تکنولوژی‌های وب توسعه یافته است.
+        </div>
+        <div class="highlight-box">
+            <strong>وضعیت پروژه:</strong> آماده برای استقرار نهایی (Production Ready) <span class="checkmark">✓</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۲. هویت بصری و برندینگ</h2>
+        
+        <h3 class="subsection-title">پالت رنگی تترا</h3>
+        <ul class="feature-list">
+            <li><strong>رنگ اصلی:</strong> سبز روشن (#afd700) - استفاده در دکمه‌ها، لینک‌ها و عناصر تعاملی</li>
+            <li><strong>رنگ متن:</strong> مشکی (#000000) - برای خوانایی بهینه</li>
+            <li><strong>پس‌زمینه:</strong> سفید (#ffffff) - برای ظاهر تمیز و حرفه‌ای</li>
+            <li><strong>رنگ هاور:</strong> سبز تیره (#8fb600) - برای بازخورد بصری</li>
+        </ul>
+
+        <h3 class="subsection-title">لوگو و تایپوگرافی</h3>
+        <ul class="feature-list">
+            <li><strong>لوگوی رسمی تترا:</strong> پیاده‌سازی شده با لینک به tethera.io</li>
+            <li><strong>فونت انگلیسی:</strong> Outfit (وزن‌های 300, 400, 600, 800)</li>
+            <li><strong>فونت فارسی:</strong> Vazirmatn (وزن‌های 300, 400, 600, 800)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۳. سیستم احراز هویت</h2>
+        
+        <h3 class="subsection-title">روش‌های ورود</h3>
+        <ul class="feature-list">
+            <li><span class="checkmark">✓</span> <strong>ایمیل و رمز عبور:</strong> سیستم ثبت‌نام و ورود سنتی</li>
+            <li><span class="checkmark">✓</span> <strong>Google OAuth:</strong> ورود سریع با حساب گوگل (نیاز به فعال‌سازی در Supabase)</li>
+            <li><span class="checkmark">✓</span> <strong>دسترسی عمومی:</strong> امکان مشاهده کتابخانه بدون ثبت‌نام</li>
+        </ul>
+
+        <h3 class="subsection-title">امنیت</h3>
+        <ul class="feature-list">
+            <li><strong>Row Level Security (RLS):</strong> محافظت از داده‌های کاربران در سطح دیتابیس</li>
+            <li><strong>Session Management:</strong> مدیریت نشست‌ها با Supabase</li>
+            <li><strong>Protected Routes:</strong> محافظت از مسیرهای خصوصی</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۴. معماری دیتابیس</h2>
+        
+        <h3 class="subsection-title">جداول پایگاه داده</h3>
+        <ul class="feature-list">
+            <li><strong>profiles:</strong> اطلاعات پروفایل کاربران (نام، زبان، تاریخ عضویت)</li>
+            <li><strong>custom_prompts:</strong> پرامپت‌های شخصی کاربران</li>
+            <li><strong>community_prompts:</strong> پرامپت‌های اشتراکی با جامعه</li>
+            <li><strong>prompt_likes:</strong> سیستم لایک پرامپت‌های اجتماعی</li>
+        </ul>
+
+        <div class="code-block">
+-- مثال: جدول پرامپت‌های اجتماعی
+CREATE TABLE community_prompts (
+  id UUID PRIMARY KEY,
+  user_id UUID REFERENCES profiles(id),
+  title TEXT NOT NULL,
+  content TEXT NOT NULL,
+  category TEXT,
+  likes_count INTEGER DEFAULT 0,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۵. کتابخانه پرامپت‌ها</h2>
+        
+        <h3 class="subsection-title">محتوای کتابخانه</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">پرامپت حرفه‌ای</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">زبان (فارسی/انگلیسی)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">دسته‌بندی</div>
+            </div>
+        </div>
+
+        <h3 class="subsection-title">دسته‌بندی‌ها</h3>
+        <div class="tech-stack">
+            <span class="tech-badge">برنامه‌نویسی</span>
+            <span class="tech-badge">نوشتن محتوا</span>
+            <span class="tech-badge">بازاریابی</span>
+            <span class="tech-badge">تحلیل داده</span>
+            <span class="tech-badge">طراحی</span>
+            <span class="tech-badge">آموزش</span>
+            <span class="tech-badge">تحقیق</span>
+            <span class="tech-badge">مدیریت پروژه</span>
+            <span class="tech-badge">خدمات مشتری</span>
+            <span class="tech-badge">منابع انسانی</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۶. یکپارچه‌سازی هوش مصنوعی</h2>
+        
+        <h3 class="subsection-title">قابلیت‌های هوشمند</h3>
+        <ul class="feature-list">
+            <li><span class="checkmark">✓</span> <strong>شخصی‌سازی پرامپت:</strong> سفارشی‌سازی خودکار با Gemini AI</li>
+            <li><span class="checkmark">✓</span> <strong>تبدیل به JSON:</strong> تبدیل خودکار پرامپت‌ها به فرمت JSON</li>
+            <li><span class="checkmark">✓</span> <strong>پردازش دوزبانه:</strong> پشتیبانی از فارسی و انگلیسی</li>
+        </ul>
+
+        <div class="code-block">
+// مثال: استفاده از Gemini AI
+const { text } = await generateText({
+  model: gemini("gemini-1.5-flash"),
+  prompt: `Customize this prompt for ${industry}...`,
+});
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۷. ویژگی‌های اجتماعی</h2>
+        
+        <h3 class="subsection-title">پرامپت‌های اجتماعی</h3>
+        <ul class="feature-list">
+            <li><span class="checkmark">✓</span> <strong>اشتراک‌گذاری:</strong> کاربران می‌توانند پرامپت‌های خود را با جامعه به اشتراک بگذارند</li>
+            <li><span class="checkmark">✓</span> <strong>سیستم لایک:</strong> امکان پسندیدن پرامپت‌های دیگران</li>
+            <li><span class="checkmark">✓</span> <strong>کپی سریع:</strong> کپی آسان پرامپت‌ها با یک کلیک</li>
+            <li><span class="checkmark">✓</span> <strong>نمایش نویسنده:</strong> نمایش اطلاعات سازنده پرامپت</li>
+            <li><span class="checkmark">✓</span> <strong>شمارنده لایک:</strong> نمایش تعداد پسندها به صورت زنده</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۸. طراحی رابط کاربری</h2>
+        
+        <h3 class="subsection-title">ویژگی‌های UI/UX</h3>
+        <ul class="feature-list">
+            <li><strong>نوار دسته‌بندی افقی:</strong> اسکرول افقی برای فیلتر دسته‌بندی‌ها</li>
+            <li><strong>فیلترهای پیشرفته:</strong> فیلتر بر اساس صنعت و نقش شغلی</li>
+            <li><strong>طراحی ریسپانسیو:</strong> سازگار با موبایل، تبلت و دسکتاپ</li>
+            <li><strong>انیمیشن‌های نرم:</strong> ترنزیشن‌های روان برای تجربه بهتر</li>
+            <li><strong>اسکرول‌بار سفارشی:</strong> اسکرول‌بار با رنگ برند تترا</li>
+        </ul>
+
+        <h3 class="subsection-title">دسترسی‌پذیری</h3>
+        <ul class="feature-list">
+            <li><strong>پشتیبانی RTL/LTR:</strong> تغییر خودکار جهت متن</li>
+            <li><strong>کنتراست رنگی:</strong> رعایت استانداردهای WCAG</li>
+            <li><strong>کیبورد ناوبری:</strong> قابلیت استفاده با صفحه‌کلید</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۹. پشتیبانی چندزبانه</h2>
+        
+        <ul class="feature-list">
+            <li><span class="checkmark">✓</span> <strong>دوزبانه کامل:</strong> تمام رابط کاربری به فارسی و انگلیسی</li>
+            <li><span class="checkmark">✓</span> <strong>تغییر زبان آسان:</strong> سوئیچ زبان در هدر</li>
+            <li><span class="checkmark">✓</span> <strong>محتوای محلی‌سازی شده:</strong> تمام پرامپت‌ها در هر دو زبان</li>
+            <li><span class="checkmark">✓</span> <strong>فونت‌های بومی:</strong> فونت مناسب برای هر زبان</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۱۰. پشته فناوری</h2>
+        
+        <h3 class="subsection-title">فریمورک‌ها و کتابخانه‌ها</h3>
+        <div class="tech-stack">
+            <span class="tech-badge">Next.js 15</span>
+            <span class="tech-badge">React 19</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Tailwind CSS v4</span>
+            <span class="tech-badge">Supabase</span>
+            <span class="tech-badge">Google Gemini AI</span>
+            <span class="tech-badge">shadcn/ui</span>
+        </div>
+
+        <h3 class="subsection-title">ویژگی‌های فنی</h3>
+        <ul class="feature-list">
+            <li><strong>Server Components:</strong> رندر سمت سرور برای عملکرد بهتر</li>
+            <li><strong>Server Actions:</strong> عملیات سرور بدون نیاز به API routes</li>
+            <li><strong>Streaming:</strong> بارگذاری تدریجی محتوا</li>
+            <li><strong>Edge Runtime:</strong> اجرا در لبه شبکه برای سرعت بیشتر</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۱۱. آمار پروژه</h2>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">3000+</div>
+                <div class="stat-label">خط کد</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">کامپوننت</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">جدول دیتابیس</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Server Action</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">پرامپت آماده</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">زبان پشتیبانی شده</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">۱۲. آمادگی استقرار</h2>
+        
+        <h3 class="subsection-title">چک‌لیست استقرار</h3>
+        <ul class="feature-list">
+            <li><span class="checkmark">✓</span> تمام فایل‌های پروژه آماده</li>
+            <li><span class="checkmark">✓</span> دیتابیس راه‌اندازی شده</li>
+            <li><span class="checkmark">✓</span> متغیرهای محیطی تنظیم شده</li>
+            <li><span class="checkmark">✓</span> احراز هویت پیکربندی شده</li>
+            <li><span class="checkmark">✓</span> برندینگ کامل شده</li>
+            <li><span class="checkmark">✓</span> تست‌های اولیه انجام شده</li>
+        </ul>
+
+        <h3 class="subsection-title">مراحل بعدی</h3>
+        <ul class="feature-list">
+            <li><strong>فعال‌سازی Google OAuth:</strong> در داشبورد Supabase</li>
+            <li><strong>استقرار در Vercel:</strong> دیپلوی نسخه نهایی</li>
+            <li><strong>تست کاربری:</strong> آزمایش با کاربران واقعی</li>
+            <li><strong>بهینه‌سازی SEO:</strong> افزودن متاتگ‌ها و sitemap</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p><strong>پروژه آکادمی هوش مصنوعی تترا</strong></p>
+        <p>توسعه یافته با Next.js 15 و Supabase</p>
+        <p style="margin-top: 10px;">© ۱۴۰۳ تترا - تمامی حقوق محفوظ است</p>
+    </div>
+</body>
+</html>
