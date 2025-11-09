@@ -159,6 +159,549 @@ export const PROMPTS: Prompt[] = [
   },
 ]
 
+export const OPENAI_PROMPTS: Prompt[] = [
+  {
+    id: "openai-1",
+    title_en: "Sales Outreach Email Campaign",
+    title_fa: "کمپین ایمیل فروش",
+    category: "Sales",
+    industry: "Technology",
+    role: "Sales Development Representative",
+    prompt_en: `**Persona:** You are an experienced Sales Development Representative specializing in B2B SaaS outreach.
+
+**Goal:** Create a personalized cold email sequence for reaching out to potential enterprise customers.
+
+**Context:** Targeting CIOs and CTOs at companies with 500+ employees in the technology sector. Your product is a cloud-based project management platform that reduces delivery time by 40%.
+
+**Requirements:**
+- Write a 3-email sequence (initial outreach, follow-up, final touchpoint)
+- Each email should be 100-150 words maximum
+- Include compelling subject lines that improve open rates
+- Address specific pain points (project delays, team collaboration, visibility)
+- Include social proof (customer logos, case study metrics)
+- Clear call-to-action for each email
+- Personalization tokens for automation
+- A/B testing variants for subject lines
+
+**Tone:** Professional, consultative, value-focused
+
+**Format:** Email sequence with subject lines, body copy, and CTA buttons`,
+    prompt_fa: `**شخصیت:** شما یک نماینده توسعه فروش با تجربه متخصص در دسترسی B2B SaaS هستید.
+
+**هدف:** ایجاد یک توالی ایمیل سرد شخصی‌سازی شده برای دسترسی به مشتریان سازمانی بالقوه.
+
+**زمینه:** هدف‌گیری مدیران ارشد فناوری اطلاعات در شرکت‌های با بیش از ۵۰۰ کارمند در بخش فناوری. محصول شما یک پلتفرم مدیریت پروژه مبتنی بر ابر است که زمان تحویل را ۴۰٪ کاهش می‌دهد.
+
+**الزامات:**
+- نوشتن یک توالی ۳ ایمیلی (دسترسی اولیه، پیگیری، تماس نهایی)
+- هر ایمیل حداکثر ۱۰۰ تا ۱۵۰ کلمه باشد
+- شامل موضوعات جذاب که نرخ باز شدن را بهبود می‌بخشد
+- پرداختن به نقاط درد خاص (تاخیرهای پروژه، همکاری تیمی، دید کلی)
+- شامل اثبات اجتماعی (لوگوهای مشتریان، معیارهای مطالعه موردی)
+- فراخوان واضح برای اقدام در هر ایمیل
+- توکن‌های شخصی‌سازی برای اتوماسیون
+- گزینه‌های تست A/B برای موضوعات
+
+**لحن:** حرفه‌ای، مشاوره‌ای، متمرکز بر ارزش
+
+**قالب:** توالی ایمیل با موضوعات، متن اصلی و دکمه‌های فراخوان`,
+    tags_en: ["sales", "outreach", "email", "b2b"],
+    tags_fa: ["فروش", "دسترسی", "ایمیل", "کسب‌وکار به کسب‌وکار"],
+  },
+  {
+    id: "openai-2",
+    title_en: "Customer Success Onboarding Strategy",
+    title_fa: "استراتژی آموزش موفقیت مشتری",
+    category: "Customer Support",
+    industry: "SaaS",
+    role: "Customer Success Manager",
+    prompt_en: `**Persona:** You are a Customer Success Manager with expertise in SaaS product adoption and retention strategies.
+
+**Goal:** Create a comprehensive 60-day onboarding plan that ensures new customers achieve their first win quickly.
+
+**Context:** Working with B2B SaaS customers who have just purchased an annual subscription. Average contract value is $50K. Customer success metrics show that customers who achieve value in the first 30 days have 90% retention rates.
+
+**Requirements:**
+- Define customer success milestones for days 1, 7, 14, 30, and 60
+- Create email templates for each milestone touchpoint
+- Design health score metrics to track engagement
+- Build escalation protocols for at-risk accounts
+- Include quarterly business review (QBR) preparation checklist
+- Provide upsell and cross-sell identification framework
+- Design customer education resources (videos, guides, webinars)
+- Create adoption tracking dashboard metrics
+- Include renewal conversation playbook
+
+**Tone:** Supportive, proactive, consultative
+
+**Format:** Structured onboarding guide with timelines, templates, and tracking metrics`,
+    prompt_fa: `**شخصیت:** شما یک مدیر موفقیت مشتری با تخصص در استراتژی‌های پذیرش و حفظ محصول SaaS هستید.
+
+**هدف:** ایجاد یک برنامه جامع ۶۰ روزه برای آموزش که تضمین می‌کند مشتریان جدید به سرعت به اولین موفقیت خود برسند.
+
+**زمینه:** کار با مشتریان SaaS B2B که به تازگی اشتراک سالانه خریداری کرده‌اند. میانگین ارزش قرارداد ۵۰ هزار دلار است. معیارهای موفقیت مشتری نشان می‌دهند که مشتریانی که در ۳۰ روز اول به ارزش دست می‌یابند، نرخ حفظ ۹۰٪ دارند.
+
+**الزامات:**
+- تعریف نقاط عطف موفقیت مشتری برای روزهای ۱، ۷، ۱۴، ۳۰ و ۶۰
+- ایجاد قالب‌های ایمیل برای هر نقطه تماس
+- طراحی معیارهای امتیاز سلامت برای ردیابی تعامل
+- ساخت پروتکل‌های تشدید برای حساب‌های در معرض خطر
+- شامل چک‌لیست آماده‌سازی بررسی تجاری فصلی (QBR)
+- ارائه چارچوب شناسایی فروش بیشتر و فروش متقاطع
+- طراحی منابع آموزش مشتری (ویدیوها، راهنماها، وبینارها)
+- ایجاد معیارهای داشبورد ردیابی پذیرش
+- شامل کتاب بازی مکالمه تمدید
+
+**لحن:** حمایتی، فعال، مشاوره‌ای
+
+**قالب:** راهنمای ساختاریافته آموزش با جدول زمانی، قالب‌ها و معیارهای ردیابی`,
+    tags_en: ["customer success", "onboarding", "retention", "saas"],
+    tags_fa: ["موفقیت مشتری", "آموزش", "حفظ", "نرم‌افزار به عنوان سرویس"],
+  },
+  {
+    id: "openai-3",
+    title_en: "Product Competitive Research Analysis",
+    title_fa: "تحلیل تحقیقات رقابتی محصول",
+    category: "Product",
+    industry: "Technology",
+    role: "Product Manager",
+    prompt_en: `**Persona:** You are a strategic Product Manager specializing in competitive intelligence and market positioning.
+
+**Goal:** Conduct a comprehensive competitive analysis to identify market gaps and product opportunities.
+
+**Context:** Analyzing 3-5 direct competitors in the project management software space. Need to understand feature parity, pricing strategies, and market positioning to inform roadmap decisions.
+
+**Requirements:**
+- Create competitive matrix comparing features across 5 key competitors
+- Analyze pricing tiers and packaging strategies
+- Identify unique value propositions and differentiation strategies
+- Assess user experience and design patterns
+- Review customer feedback and pain points from review sites
+- Map out competitors' go-to-market strategies
+- Identify feature gaps and opportunities
+- Benchmark performance metrics (speed, reliability, uptime)
+- Analyze customer acquisition and retention tactics
+- Provide SWOT analysis for each competitor
+- Recommend strategic positioning and differentiation approaches
+
+**Tone:** Analytical, strategic, objective
+
+**Format:** Comprehensive research document with matrices, charts, and strategic recommendations`,
+    prompt_fa: `**شخصیت:** شما یک مدیر محصول استراتژیک متخصص در هوش رقابتی و موقعیت‌یابی بازار هستید.
+
+**هدف:** انجام یک تحلیل رقابتی جامع برای شناسایی شکاف‌های بازار و فرصت‌های محصول.
+
+**زمینه:** تحلیل ۳ تا ۵ رقیب مستقیم در فضای نرم‌افزار مدیریت پروژه. نیاز به درک برابری ویژگی‌ها، استراتژی‌های قیمت‌گذاری و موقعیت‌یابی بازار برای تصمیم‌گیری در مورد نقشه راه.
+
+**الزامات:**
+- ایجاد ماتریس رقابتی مقایسه ویژگی‌ها در ۵ رقیب کلیدی
+- تحلیل سطوح قیمت‌گذاری و استراتژی‌های بسته‌بندی
+- شناسایی پیشنهادات ارزش منحصر به فرد و استراتژی‌های تمایز
+- ارزیابی تجربه کاربری و الگوهای طراحی
+- بررسی بازخورد مشتریان و نقاط درد از سایت‌های بررسی
+- نقشه‌برداری استراتژی‌های ورود به بازار رقبا
+- شناسایی شکاف‌های ویژگی و فرصت‌ها
+- معیار عملکرد (سرعت، قابلیت اطمینان، زمان فعال بودن)
+- تحلیل تاکتیک‌های جذب و حفظ مشتری
+- ارائه تحلیل SWOT برای هر رقیب
+- توصیه رویکردهای موقعیت‌یابی استراتژیک و تمایز
+
+**لحن:** تحلیلی، استراتژیک، بی‌طرفانه
+
+**قالب:** سند جامع تحقیقاتی با ماتریس‌ها، نمودارها و توصیه‌های استراتژیک`,
+    tags_en: ["product", "competitive analysis", "research", "strategy"],
+    tags_fa: ["محصول", "تحلیل رقابتی", "تحقیق", "استراتژی"],
+  },
+  {
+    id: "openai-4",
+    title_en: "Engineering System Architecture Design",
+    title_fa: "طراحی معماری سیستم مهندسی",
+    category: "Engineering",
+    industry: "Technology",
+    role: "Software Architect",
+    prompt_en: `**Persona:** You are a Senior Software Architect with expertise in distributed systems and cloud architecture.
+
+**Goal:** Design a scalable, resilient system architecture for a high-traffic application.
+
+**Context:** Building a real-time analytics platform that needs to process 100K events per second, support 1M concurrent users, and maintain 99.99% uptime. Stack includes microservices, event-driven architecture, and cloud-native technologies.
+
+**Requirements:**
+- Create system architecture diagram showing all components and data flows
+- Define microservices boundaries and responsibilities
+- Design API gateway and load balancing strategy
+- Plan database architecture (SQL vs NoSQL, sharding, replication)
+- Implement caching strategy (Redis, CDN)
+- Design event streaming pipeline (Kafka, RabbitMQ)
+- Define monitoring and observability stack
+- Plan disaster recovery and backup strategies
+- Estimate infrastructure costs and scaling plan
+- Document security architecture (authentication, authorization, encryption)
+- Define CI/CD pipeline and deployment strategy
+- Include performance benchmarks and SLAs
+
+**Tone:** Technical, precise, comprehensive
+
+**Format:** Technical architecture document with diagrams, specifications, and implementation guidelines`,
+    prompt_fa: `**شخصیت:** شما یک معمار نرم‌افزار ارشد با تخصص در سیستم‌های توزیع‌شده و معماری ابری هستید.
+
+**هدف:** طراحی یک معماری سیستم مقیاس‌پذیر و انعطاف‌پذیر برای یک برنامه با ترافیک بالا.
+
+**زمینه:** ساخت یک پلتفرم تحلیل در زمان واقعی که نیاز دارد ۱۰۰ هزار رویداد در ثانیه را پردازش کند، از ۱ میلیون کاربر همزمان پشتیبانی کند و ۹۹.۹۹٪ زمان فعال بودن را حفظ کند. پشته شامل میکروسرویس‌ها، معماری رویداد محور و فناوری‌های ابری بومی است.
+
+**الزامات:**
+- ایجاد نمودار معماری سیستم نشان دهنده همه اجزا و جریان‌های داده
+- تعریف مرزها و مسئولیت‌های میکروسرویس‌ها
+- طراحی استراتژی دروازه API و توازن بار
+- برنامه‌ریزی معماری پایگاه داده (SQL در مقابل NoSQL، شاردینگ، تکرار)
+- اجرای استراتژی کش (Redis، CDN)
+- طراحی خط لوله جریان رویداد (Kafka، RabbitMQ)
+- تعریف پشته نظارت و قابلیت مشاهده
+- برنامه‌ریزی بازیابی از فاجعه و استراتژی‌های پشتیبان
+- تخمین هزینه‌های زیرساخت و برنامه مقیاس‌پذیری
+- مستندسازی معماری امنیتی (احراز هویت، مجوز، رمزنگاری)
+- تعریف خط لوله CI/CD و استراتژی استقرار
+- شامل معیارهای عملکرد و SLA
+
+**لحن:** فنی، دقیق، جامع
+
+**قالب:** سند معماری فنی با نمودارها، مشخصات و دستورالعمل‌های اجرایی`,
+    tags_en: ["engineering", "architecture", "scalability", "cloud"],
+    tags_fa: ["مهندسی", "معماری", "مقیاس‌پذیری", "ابر"],
+  },
+  {
+    id: "openai-5",
+    title_en: "HR Recruiting Strategy Development",
+    title_fa: "توسعه استراتژی استخدام منابع انسانی",
+    category: "HR",
+    industry: "Technology",
+    role: "Talent Acquisition Manager",
+    prompt_en: `**Persona:** You are a Talent Acquisition Manager specializing in technical recruitment for fast-growing startups.
+
+**Goal:** Build a comprehensive recruiting strategy to hire 50 engineers in 6 months.
+
+**Context:** Series B startup with $20M funding needs to scale the engineering team from 20 to 70 people. Competing with FAANG companies for talent. Need to establish employer brand, sourcing channels, and interview processes.
+
+**Requirements:**
+- Define ideal candidate profiles for 5 key roles (Frontend, Backend, DevOps, Data, Mobile)
+- Create sourcing strategy across multiple channels (LinkedIn, GitHub, referrals, agencies)
+- Design interview process with technical assessments and culture fit evaluations
+- Build employer branding campaign (career site, social media, content marketing)
+- Establish salary bands and compensation philosophy
+- Create candidate experience journey map
+- Define diversity and inclusion hiring goals
+- Design onboarding program for new hires
+- Set recruiting metrics and KPIs (time-to-hire, offer acceptance rate, quality of hire)
+- Build talent pipeline for future hiring needs
+- Create rejection and offer letter templates
+
+**Tone:** Strategic, empathetic, results-driven
+
+**Format:** Comprehensive recruiting playbook with workflows, templates, and metrics`,
+    prompt_fa: `**شخصیت:** شما یک مدیر جذب استعداد متخصص در استخدام فنی برای استارتاپ‌های در حال رشد سریع هستید.
+
+**هدف:** ساخت یک استراتژی جامع استخدام برای استخدام ۵۰ مهندس در ۶ ماه.
+
+**زمینه:** استارتاپ سری B با ۲۰ میلیون دلار سرمایه نیاز دارد تیم مهندسی را از ۲۰ به ۷۰ نفر افزایش دهد. رقابت با شرکت‌های FAANG برای استعداد. نیاز به ایجاد برند کارفرما، کانال‌های منبع‌یابی و فرآیندهای مصاحبه.
+
+**الزامات:**
+- تعریف پروفایل‌های کاندیدای ایده‌آل برای ۵ نقش کلیدی (فرانت‌اند، بک‌اند، DevOps، داده، موبایل)
+- ایجاد استراتژی منبع‌یابی در کانال‌های متعدد (LinkedIn، GitHub، ارجاعات، آژانس‌ها)
+- طراحی فرآیند مصاحبه با ارزیابی‌های فنی و ارزیابی‌های تناسب فرهنگی
+- ساخت کمپین برندسازی کارفرما (سایت شغلی، رسانه‌های اجتماعی، بازاریابی محتوا)
+- ایجاد باندهای حقوق و فلسفه جبران خدمات
+- ایجاد نقشه سفر تجربه کاندیدا
+- تعریف اهداف استخدام تنوع و شمول
+- طراحی برنامه آموزش برای استخدام‌های جدید
+- تنظیم معیارها و شاخص‌های کلیدی عملکرد استخدام (زمان استخدام، نرخ پذیرش پیشنهاد، کیفیت استخدام)
+- ساخت خط لوله استعداد برای نیازهای استخدام آینده
+- ایجاد قالب‌های نامه رد و پیشنهاد
+
+**لحن:** استراتژیک، همدلانه، نتیجه‌گرا
+
+**قالب:** کتاب بازی جامع استخدام با گردش‌های کاری، قالب‌ها و معیارها`,
+    tags_en: ["hr", "recruiting", "talent acquisition", "hiring"],
+    tags_fa: ["منابع انسانی", "استخدام", "جذب استعداد", "استخدام"],
+  },
+  {
+    id: "openai-6",
+    title_en: "IT System Troubleshooting Guide",
+    title_fa: "راهنمای عیب‌یابی سیستم فناوری اطلاعات",
+    category: "Engineering",
+    industry: "Technology",
+    role: "IT Support Specialist",
+    prompt_en: `**Persona:** You are an experienced IT Support Specialist with expertise in enterprise system administration and troubleshooting.
+
+**Goal:** Create a comprehensive troubleshooting guide for common IT issues in an enterprise environment.
+
+**Context:** Supporting 500+ employees across multiple offices with various hardware, software, and network issues. Need standardized procedures to improve resolution time and consistency.
+
+**Requirements:**
+- Document troubleshooting steps for 20 most common IT issues
+- Include network connectivity problems (VPN, WiFi, Ethernet)
+- Cover email and communication tool issues (Outlook, Slack, Teams)
+- Address hardware problems (printer, monitor, peripherals)
+- Include software installation and licensing issues
+- Document security and access control problems
+- Create escalation procedures for complex issues
+- Include remote support best practices
+- Provide knowledge base article templates
+- Design ticketing system workflows
+- Include preventive maintenance schedules
+- Document backup and recovery procedures
+
+**Tone:** Clear, instructional, technical yet accessible
+
+**Format:** Structured troubleshooting manual with step-by-step guides and flowcharts`,
+    prompt_fa: `**شخصیت:** شما یک متخصص پشتیبانی فناوری اطلاعات با تجربه با تخصص در مدیریت سیستم سازمانی و عیب‌یابی هستید.
+
+**هدف:** ایجاد یک راهنمای جامع عیب‌یابی برای مشکلات رایج فناوری اطلاعات در محیط سازمانی.
+
+**زمینه:** پشتیبانی از بیش از ۵۰۰ کارمند در دفاتر متعدد با مشکلات مختلف سخت‌افزاری، نرم‌افزاری و شبکه. نیاز به رویه‌های استاندارد برای بهبود زمان حل مشکل و ثبات.
+
+**الزامات:**
+- مستندسازی مراحل عیب‌یابی برای ۲۰ مشکل رایج فناوری اطلاعات
+- شامل مشکلات اتصال شبکه (VPN، WiFi، اترنت)
+- پوشش مشکلات ایمیل و ابزارهای ارتباطی (Outlook، Slack، Teams)
+- رسیدگی به مشکلات سخت‌افزاری (چاپگر، مانیتور، جانبی)
+- شامل مشکلات نصب نرم‌افزار و مجوز
+- مستندسازی مشکلات امنیتی و کنترل دسترسی
+- ایجاد رویه‌های تشدید برای مشکلات پیچیده
+- شامل بهترین شیوه‌های پشتیبانی از راه دور
+- ارائه قالب‌های مقاله پایگاه دانش
+- طراحی گردش‌های کاری سیستم تیکت
+- شامل برنامه‌های نگهداری پیشگیرانه
+- مستندسازی رویه‌های پشتیبان و بازیابی
+
+**لحن:** واضح، آموزشی، فنی اما در دسترس
+
+**قالب:** کتابچه راهنمای عیب‌یابی ساختاریافته با راهنماهای گام به گام و نمودارهای جریان`,
+    tags_en: ["it", "troubleshooting", "support", "systems"],
+    tags_fa: ["فناوری اطلاعات", "عیب‌یابی", "پشتیبانی", "سیستم‌ها"],
+  },
+  {
+    id: "openai-7",
+    title_en: "Manager Team Leadership Framework",
+    title_fa: "چارچوب رهبری تیم مدیر",
+    category: "HR",
+    industry: "Technology",
+    role: "Engineering Manager",
+    prompt_en: `**Persona:** You are an experienced Engineering Manager focused on building high-performing, engaged teams.
+
+**Goal:** Develop a comprehensive team leadership framework that covers goal-setting, performance management, and culture building.
+
+**Context:** Managing a team of 10 engineers in a fast-paced startup environment. Need to balance technical delivery with team development and wellbeing.
+
+**Requirements:**
+- Create quarterly OKR-setting process for team alignment
+- Design 1-on-1 meeting templates with coaching frameworks
+- Build performance review process with 360-degree feedback
+- Develop career development plans for different seniority levels
+- Create team health monitoring system (engagement, burnout indicators)
+- Design conflict resolution and difficult conversation frameworks
+- Build recognition and reward programs
+- Create team rituals and culture-building activities
+- Define delegation and empowerment strategies
+- Include remote/hybrid team management best practices
+- Design hiring and onboarding support for team growth
+- Create skip-level meeting guidelines
+
+**Tone:** Supportive, strategic, empowering
+
+**Format:** Leadership playbook with frameworks, templates, and best practices`,
+    prompt_fa: `**شخصیت:** شما یک مدیر مهندسی با تجربه متمرکز بر ساخت تیم‌های با عملکرد بالا و مشارکتی هستید.
+
+**هدف:** توسعه یک چارچوب جامع رهبری تیم که هدف‌گذاری، مدیریت عملکرد و ساخت فرهنگ را پوشش می‌دهد.
+
+**زمینه:** مدیریت یک تیم ۱۰ نفره مهندسان در یک محیط استارتاپ سریع. نیاز به متعادل کردن تحویل فنی با توسعه تیم و رفاه.
+
+**الزامات:**
+- ایجاد فرآیند تنظیم OKR فصلی برای هم‌راستایی تیم
+- طراحی قالب‌های جلسه یک به یک با چارچوب‌های مربیگری
+- ساخت فرآیند بررسی عملکرد با بازخورد ۳۶۰ درجه
+- توسعه برنامه‌های توسعه شغلی برای سطوح مختلف ارشدیت
+- ایجاد سیستم نظارت بر سلامت تیم (مشارکت، شاخص‌های فرسودگی)
+- طراحی چارچوب‌های حل تعارض و مکالمات دشوار
+- ساخت برنامه‌های شناسایی و پاداش
+- ایجاد آیین‌های تیمی و فعالیت‌های ساخت فرهنگ
+- تعریف استراتژی‌های تفویض و توانمندسازی
+- شامل بهترین شیوه‌های مدیریت تیم دورکاری/ترکیبی
+- طراحی پشتیبانی استخدام و آموزش برای رشد تیم
+- ایجاد دستورالعمل‌های جلسه سطح پرشی
+
+**لحن:** حمایتی، استراتژیک، توانمندساز
+
+**قالب:** کتاب بازی رهبری با چارچوب‌ها، قالب‌ها و بهترین شیوه‌ها`,
+    tags_en: ["management", "leadership", "team building", "coaching"],
+    tags_fa: ["مدیریت", "رهبری", "ساخت تیم", "مربیگری"],
+  },
+  {
+    id: "openai-8",
+    title_en: "Executive Strategic Planning",
+    title_fa: "برنامه‌ریزی استراتژیک اجرایی",
+    category: "Business",
+    industry: "Technology",
+    role: "Chief Executive Officer",
+    prompt_en: `**Persona:** You are a strategic CEO with experience leading high-growth technology companies through multiple funding rounds.
+
+**Goal:** Develop a 3-year strategic plan that drives company growth from $10M to $50M ARR.
+
+**Context:** Series B SaaS company with 100 employees, strong product-market fit, but facing increased competition. Need to make strategic decisions about market expansion, product development, and team scaling.
+
+**Requirements:**
+- Define company vision, mission, and core values
+- Set 3-year financial goals and key business metrics
+- Identify strategic priorities and initiatives
+- Analyze market opportunities and competitive threats (SWOT)
+- Plan market expansion strategy (new verticals, geographies)
+- Define product roadmap alignment with business goals
+- Create organizational design and hiring plan
+- Develop go-to-market and sales strategy
+- Plan fundraising strategy and investor relations
+- Define company culture and leadership principles
+- Create quarterly OKRs cascading from strategic goals
+- Include risk assessment and mitigation strategies
+
+**Tone:** Visionary, analytical, decisive
+
+**Format:** Executive strategic plan with market analysis, financial projections, and implementation roadmap`,
+    prompt_fa: `**شخصیت:** شما یک مدیر عامل استراتژیک با تجربه رهبری شرکت‌های فناوری با رشد بالا در دوره‌های تامین مالی متعدد هستید.
+
+**هدف:** توسعه یک برنامه استراتژیک ۳ ساله که رشد شرکت را از ۱۰ میلیون به ۵۰ میلیون دلار درآمد سالانه تکراری هدایت می‌کند.
+
+**زمینه:** شرکت SaaS سری B با ۱۰۰ کارمند، تناسب محصول-بازار قوی، اما مواجه با رقابت افزایش یافته. نیاز به تصمیم‌گیری استراتژیک در مورد توسعه بازار، توسعه محصول و مقیاس‌پذیری تیم.
+
+**الزامات:**
+- تعریف چشم‌انداز، ماموریت و ارزش‌های اصلی شرکت
+- تنظیم اهداف مالی ۳ ساله و معیارهای کلیدی کسب‌وکار
+- شناسایی اولویت‌ها و ابتکارات استراتژیک
+- تحلیل فرصت‌های بازار و تهدیدات رقابتی (SWOT)
+- برنامه‌ریزی استراتژی توسعه بازار (بخش‌های جدید، مناطق جغرافیایی)
+- تعریف هم‌راستایی نقشه راه محصول با اهداف کسب‌وکار
+- ایجاد طراحی سازمانی و برنامه استخدام
+- توسعه استراتژی ورود به بازار و فروش
+- برنامه‌ریزی استراتژی جمع‌آوری سرمایه و روابط سرمایه‌گذار
+- تعریف فرهنگ شرکت و اصول رهبری
+- ایجاد OKRهای فصلی مشتق از اهداف استراتژیک
+- شامل ارزیابی ریسک و استراتژی‌های کاهش آن
+
+**لحن:** آینده‌نگر، تحلیلی، قاطع
+
+**قالب:** برنامه استراتژیک اجرایی با تحلیل بازار، پیش‌بینی‌های مالی و نقشه راه اجرایی`,
+    tags_en: ["strategy", "executive", "planning", "growth"],
+    tags_fa: ["استراتژی", "اجرایی", "برنامه‌ریزی", "رشد"],
+  },
+  {
+    id: "openai-9",
+    title_en: "Government Data Analysis Report",
+    title_fa: "گزارش تحلیل داده دولتی",
+    category: "Data Analysis",
+    industry: "Government",
+    role: "Data Analyst",
+    prompt_en: `**Persona:** You are a government Data Analyst specializing in public sector data analysis and policy insights.
+
+**Goal:** Transform raw government data (budgets, performance metrics, vendor reports) into actionable insights and visualizations for decision-makers.
+
+**Context:** Working with city government data covering budget allocation, service delivery metrics, and citizen feedback. Need to create concise briefs that inform policy decisions and improve public services.
+
+**Requirements:**
+- Analyze budget data across departments and identify spending patterns
+- Create data visualizations (charts, graphs, dashboards) for key metrics
+- Identify trends, anomalies, and areas of concern
+- Compare performance metrics against benchmarks and targets
+- Assess vendor performance and contract value
+- Analyze citizen satisfaction data and service usage patterns
+- Provide policy recommendations based on data insights
+- Create executive summary for leadership decision-making
+- Include data quality assessment and limitations
+- Design public-facing reports for transparency
+- Build automated reporting templates for recurring analysis
+
+**Tone:** Objective, clear, policy-focused
+
+**Format:** Data analysis report with visualizations, insights, and recommendations`,
+    prompt_fa: `**شخصیت:** شما یک تحلیلگر داده دولتی متخصص در تحلیل داده بخش عمومی و بینش‌های سیاستی هستید.
+
+**هدف:** تبدیل داده‌های خام دولتی (بودجه، معیارهای عملکرد، گزارش‌های فروشنده) به بینش‌های قابل اقدام و تجسم‌ها برای تصمیم‌گیرندگان.
+
+**زمینه:** کار با داده‌های دولت شهری شامل تخصیص بودجه، معیارهای ارائه خدمات و بازخورد شهروندان. نیاز به ایجاد خلاصه‌های مختصر که به تصمیم‌گیری‌های سیاستی کمک کرده و خدمات عمومی را بهبود می‌بخشند.
+
+**الزامات:**
+- تحلیل داده‌های بودجه در بخش‌ها و شناسایی الگوهای هزینه
+- ایجاد تجسم‌های داده (نمودارها، گراف‌ها، داشبوردها) برای معیارهای کلیدی
+- شناسایی روندها، ناهنجاری‌ها و حوزه‌های نگرانی
+- مقایسه معیارهای عملکرد با معیارها و اهداف
+- ارزیابی عملکرد فروشنده و ارزش قرارداد
+- تحلیل داده‌های رضایت شهروندان و الگوهای استفاده از خدمات
+- ارائه توصیه‌های سیاستی بر اساس بینش‌های داده
+- ایجاد خلاصه اجرایی برای تصمیم‌گیری رهبری
+- شامل ارزیابی کیفیت داده و محدودیت‌ها
+- طراحی گزارش‌های عمومی برای شفافیت
+- ساخت قالب‌های گزارش‌دهی خودکار برای تحلیل تکراری
+
+**لحن:** بی‌طرفانه، واضح، متمرکز بر سیاست
+
+**قالب:** گزارش تحلیل داده با تجسم‌ها، بینش‌ها و توصیه‌ها`,
+    tags_en: ["data analysis", "government", "policy", "reporting"],
+    tags_fa: ["تحلیل داده", "دولت", "سیاست", "گزارش‌دهی"],
+  },
+  {
+    id: "openai-10",
+    title_en: "Government IT Operations Guide",
+    title_fa: "راهنمای عملیات فناوری اطلاعات دولتی",
+    category: "Engineering",
+    industry: "Government",
+    role: "IT Operations Manager",
+    prompt_en: `**Persona:** You are a government IT Operations Manager responsible for maintaining legacy systems, ensuring cybersecurity, and managing limited resources.
+
+**Goal:** Create operational procedures and best practices for government IT teams to improve efficiency, security, and service delivery.
+
+**Context:** Managing IT infrastructure for a government agency with legacy systems, compliance requirements, and budget constraints. Need to balance security with usability and modernization efforts.
+
+**Requirements:**
+- Document log analysis procedures for security monitoring
+- Create incident response playbooks for common scenarios
+- Design policy drafting templates for IT governance
+- Develop vendor oversight and procurement procedures
+- Build cybersecurity checklists and compliance frameworks
+- Create system maintenance and patch management schedules
+- Design disaster recovery and business continuity plans
+- Document user access management and privilege controls
+- Include data backup and retention policies
+- Create training materials for IT staff
+- Design service level agreements (SLAs) for support
+- Include cost optimization strategies for cloud services
+
+**Tone:** Procedural, security-focused, practical
+
+**Format:** IT operations manual with procedures, checklists, and compliance guidelines`,
+    prompt_fa: `**شخصیت:** شما یک مدیر عملیات فناوری اطلاعات دولتی مسئول نگهداری سیستم‌های قدیمی، تضمین امنیت سایبری و مدیریت منابع محدود هستید.
+
+**هدف:** ایجاد رویه‌های عملیاتی و بهترین شیوه‌ها برای تیم‌های فناوری اطلاعات دولتی برای بهبود کارایی، امنیت و ارائه خدمات.
+
+**زمینه:** مدیریت زیرساخت فناوری اطلاعات برای یک آژانس دولتی با سیستم‌های قدیمی، الزامات انطباق و محدودیت‌های بودجه. نیاز به متعادل کردن امنیت با قابلیت استفاده و تلاش‌های نوسازی.
+
+**الزامات:**
+- مستندسازی رویه‌های تحلیل لاگ برای نظارت امنیتی
+- ایجاد کتاب‌های بازی واکنش به حادثه برای سناریوهای رایج
+- طراحی قالب‌های پیش‌نویس سیاست برای حاکمیت فناوری اطلاعات
+- توسعه رویه‌های نظارت بر فروشنده و تدارکات
+- ساخت چک‌لیست‌های امنیت سایبری و چارچوب‌های انطباق
+- ایجاد برنامه‌های نگهداری سیستم و مدیریت وصله
+- طراحی برنامه‌های بازیابی از فاجعه و تداوم کسب‌وکار
+- مستندسازی مدیریت دسترسی کاربر و کنترل‌های امتیازات
+- شامل سیاست‌های پشتیبان و نگهداری داده
+- ایجاد مواد آموزشی برای کارکنان فناوری اطلاعات
+- طراحی توافق‌نامه‌های سطح خدمات (SLA) برای پشتیبانی
+- شامل استراتژی‌های بهینه‌سازی هزینه برای خدمات ابری
+
+**لحن:** رویه‌ای، متمرکز بر امنیت، عملی
+
+**قالب:** کتابچه راهنمای عملیات فناوری اطلاعات با رویه‌ها، چک‌لیست‌ها و دستورالعمل‌های انطباق`,
+    tags_en: ["it operations", "government", "security", "compliance"],
+    tags_fa: ["عملیات فناوری اطلاعات", "دولت", "امنیت", "انطباق"],
+  },
+]
+
 const promptTemplates = [
   // Marketing prompts
   {
@@ -712,7 +1255,18 @@ for (let i = 0; i < promptTemplates.length && PROMPTS.length < 100; i++) {
 }
 
 export const INDUSTRIES = Array.from(
-  new Set(["All", "Technology", "E-commerce", "Healthcare", "Finance", "Education", "Manufacturing", "Retail", "SaaS"]),
+  new Set([
+    "All",
+    "Technology",
+    "E-commerce",
+    "Healthcare",
+    "Finance",
+    "Education",
+    "Manufacturing",
+    "Retail",
+    "SaaS",
+    "Government",
+  ]),
 )
 
 export const ROLES = Array.from(
@@ -726,6 +1280,11 @@ export const ROLES = Array.from(
     "Designer",
     "Customer Support",
     "Data Analyst",
+    "Software Architect",
+    "IT Support Specialist",
+    "Engineering Manager",
+    "Chief Executive Officer",
+    "IT Operations Manager",
   ]),
 )
 
